@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right,  rgb(26, 26, 71), rgb(68, 22, 68));
+    color: rgb(243, 232, 232);
+}
+
+h1 {
+      text-align: center;
+  }
+
+.image_container {
+  position: relative;
+  width: 20%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+.gym_image{
+  border-radius: 25%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+.start_image{
+  border-radius: 25%;
+  transition: .5s ease;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.image_container:hover .gym_image{
+  opacity: 0;
+}
+.image_container:hover .start_image{
+  transform: translateX(-303px);
+  opacity: 1;
+}
+ 
+.icon {
+  margin-top: 1px;
+  text-align: center
+}
+
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 280px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+}
+
+.greet {
+  text-align: center;
+  }
+
+.card {
+  margin: 25px 25px auto;
+  width: 250px;
+  height: 495px;
+  background-color: rgb(13, 13, 43);
+  padding: 18px;
+  border-radius: 15px;
+  color: aliceblue;
+  position: relative;
+  font-family: "Poppins";
+}
+
+.card_heart{
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+.card_heart:hover{
+  transform: scale(0.9);
+}
+.card_image{
+  transition: 1s;
+  width: 105%;
+}
+
+.card_image img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.card_title, .card_price{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card_size{
+  display: flex;
+  align-items: center;
+}
+.card_size span{
+  padding: 2px 2px;
+  margin: 4px 2px;
+  border: none;
+  outline: none;
+  background-color: rgb(62, 26, 71);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card_size span:hover{
+  transform: scale(0.9);
+}
+
+.card_size, .card_action{
+  margin: bottom 10px;
+}
+
+.card_action button{
+  border: none;
+  outline: none;
+  background-color: rgb(62, 26, 71);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card_action button:hover{
+  transform: scale(0.9);
+}
+
+.card:hover .card_image{
+    transform: translateY(-250px) rotate(360deg); ;
+}
+
+.description {
+   visibility: hidden;
+   transition-delay: 0.3s;
+   transition: 1s;
+   margin-top: -150px;
+}
+.card:hover  .description {
+  transform: translateY(-250px);
+  visibility: visible;
+  color: white;
+}
