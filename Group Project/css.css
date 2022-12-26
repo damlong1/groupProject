@@ -10,7 +10,14 @@ body {
     background: linear-gradient(to right,  rgb(26, 26, 71), rgb(68, 22, 68));
     color: rgb(243, 232, 232);
 }
+.container > * {
+  display: inline-block;
+}
 
+.container  {
+  padding-left: 150px;
+  padding-right: 150px;
+ }
 h1 {
       text-align: center;
   }
@@ -72,7 +79,7 @@ h1 {
   }
 
 .card {
-  margin: 25px 25px auto;
+  margin: 30px 25px auto;
   width: 250px;
   height: 495px;
   background-color: rgb(13, 13, 43);
@@ -99,9 +106,8 @@ h1 {
 }
 
 .card_image img{
-  margin-left: 25px;
-  width: 78%;
-  height: 80%;
+  width: 234px;
+  height: 315px;
   object-fit: cover;
 }
 
